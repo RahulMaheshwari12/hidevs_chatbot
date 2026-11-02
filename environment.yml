@@ -6,21 +6,20 @@ dependencies:
   - python=3.11
   - pip
   - pip:
-      - fastapi>=0.110.0
-      - uvicorn[standard]>=0.28.0
-      - pydantic>=2.6.0
-      - pydantic-settings>=2.2.0
+      # Frontend
+      - streamlit>=1.36.0
+
+      # Core
       - python-dotenv>=1.0.0
-      - httpx>=0.27.0
-      - google-api-python-client>=2.120.0
-      - google-auth-httplib2>=0.2.0
-      - google-auth-oauthlib>=1.2.0
+
+      # Gemini
+      - langchain-google-genai>=2.0.0
+
+      # LangChain
+      - langchain>=0.3.0
+      - langchain-core>=0.3.0
+      - langchain-community>=0.3.0
+      - langchain-qdrant>=0.2.0
+
+      # Qdrant
       - qdrant-client>=1.8.0
-      - langchain>=0.2.0
-      - langchain-core>=0.2.0
-      - langchain-community>=0.2.0
-      - langchain-openai>=0.1.0
-      - langchain-google-genai>=1.0.0
-      - tiktoken>=0.7.0
-      - pytest>=8.0.0
-      - pytest-asyncio>=0.23.0
