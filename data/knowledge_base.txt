@@ -1,0 +1,790 @@
+HIDEVS KNOWLEDGE BASE — FINAL
+
+================================================================================
+SOURCE 1 — ORIGINAL AI HOUSE ECOSYSTEM DOCUMENT
+================================================================================
+
+AI House Ecosystem — Master Product Data & Feature Inventory
+
+Comprehensive community specifications, primary routes, audience tracks, event architectures, and physical operations breakdown for AI House (Powered by HiDevs).
+
+1. Platform Master Inventory
+
+Feature Name | Category | Primary URL | Description | Key Modules / Sub-components
+AI House Platform | Community & Portal |  | Physical and online builder home fostering practical execution through the Learn, Build, Launch model. | Physical Venue, Online Network, Check-in Portal (/checkin), Join Route (/join), Audience Engine
+Agent Builder Challenge | Flagship Competition |  | 100-day structured builder competition with a $10,000 prize pool, culminating in a Bangalore offline finale. | 10 Sequential Challenges, Live Countdown Engine, Bangalore Top 1% Finale, $10K Prize Pool
+Agentbassador Program | Community Leadership |  | Leadership and ambassador track empowering builders to lead campus/city chapters and expand the network. | Builder Networking, Campus Chapter Outreach, Network Operations
+AI House Luma Hub | Event Aggregator |  | Centralized platform for scheduling, ticketing, and managing offline and online builder activities. | Event Ticketing, Registration Pipelines, Builder Calendar, Capacity Manager
+Developers & Builders Track | Audience Track |  | Direct pathway for engineers to enter hackathons, guided sprints, and talent recruitment pipelines. | Hackathons, Guided Project Sprints, Partner Referrals, Gemini API Credits Allocation
+AI Tool Partnerships | Partner Program |  | B2B developer-relations track enabling AI tech platforms to deploy dev tools directly to active builders. | Dev-Rel Hackathons, Product Launches, Automated Evaluation, Benchmark Leaderboards
+Tech Community Co-Hosting | Ecosystem Track |  | Venue and co-hosting framework enabling external tech communities to use the physical house and tooling. | Zero-Cost 200+ Seat Venue, Gemini API Credits, Swag/Trophy Kits, Evaluation Engine
+Colleges & Academia | Institutional Track |  | Academic collaboration framework delivering GenAI workshops, student bootcamps, and professor initiatives. | 20+ Institutional MoUs, Campus FDE Launchpad, 3-Day GenAI Workshops, Academia Dinners
+Founders & VC Residency | Incubation Track |  | In-person residency and talent sourcing program connecting early-stage AI founders with top builders and VCs. | Physical Founder Residency, Investor Demo Days, Top Leaderboard Hiring Pipelines
+Zero Latency Builder Sprint | Sprint Archive |  | High-throughput hackathon series partnered with Moss and YC Fall 2026 targeting ultra-low latency agents. | Multi-Round Submission Funnel, YC RFS Tracks, Low-Latency Agent Optimization, Offline Finale
+AI Agent Builder Series | Flagship Hackathon |  | Large-scale ecosystem hackathon held with Google for Developers to ship enterprise agents on Google's stack. | 100+ City Cohort, Google Tech Stack Verification Pipeline, Public Voting, Offline Finale
+Mastra AI Hackathon | Partner Hackathon |  | Specialized agent-building competition driving practical production deployments using the Mastra framework. | Mastra Framework Sandbox, Multi-Round Evaluation, Qdrant/Enkrypt Integrations, Offline Finale
+Physical House Venue | Operations & Venue |  | Physical infrastructure operations hub located in HSR Layout, Bengaluru for meetups, sprints, and residencies. | 200+ Seat Co-building Floor, Hardware/Demo Stages, Hallway Networking, Daily 10 AM–8 PM Access
+HiDevs Core Ecosystem | Parent Infrastructure |  | Underpinning software infrastructure providing curriculum, automated code checking, and career tracks. | CodeQuest, LeetPrompt, Dr. Agent, GenAI Internship, Dave AI Mentor
+
+2. Granular Feature Specifications
+
+1. Physical House & Venue Infrastructure
+
+Primary Section URL: https://www.aihouze.xyz/
+
+Sub-pages & Routes:
+
+Map & Directions: https://www.google.com/maps/dir/?api=1&destination=2nd%20Floor%2C%20Above%20Titan%20World%2C%20HSR%20Layout%2C%20Bengaluru
+
+Venue Check-in: https://www.aihouze.xyz/checkin
+
+Join Portal: https://www.aihouze.xyz/join
+
+Data Attributes & Functional Details:
+
+Physical Location: 2nd Floor, Above Titan World, HSR Layout, Bengaluru, Karnataka, India.
+
+Operating Hours: 10:00 AM – 8:00 PM IST, Monday to Sunday (7 days a week).
+
+Facility Scale: 200+ seat physical builder venue.
+
+Operational Positioning: Structured as an execution-oriented "Community House" for builders, explicitly distinct from standard commercial coworking spaces.
+
+Accessibility & Pricing: Community entry and event participation are completely free.
+
+Key Venue Utilities: Hosts hackathons, builder sprints, open houses, demo days, and hallway networking.
+
+2. Agent Builder Challenge
+
+Primary Section URL: https://www.aihouze.xyz/agent-builder-challenge
+
+Data Attributes & Functional Details:
+
+Format: 100-day structured builder competition comprising 10 distinct technical challenges.
+
+Total Prize Pool: $10,000 cash rewards and incentives.
+
+Progression Architecture: Automated evaluation filters all cohort submissions; the top 1% qualify directly for the Bangalore offline grand finale.
+
+Launch Timeline: Officially goes live on 16 November 2026.
+
+Interface Features: Real-time countdown clock (days, hours, minutes, seconds) and challenge specification portal.
+
+3. Agentbassador Program
+
+Primary Section URL: https://www.aihouze.xyz/agentbassador-program
+
+Data Attributes & Functional Details:
+
+Program Mandate: Connect builders, lead local/campus developer networks, and scale the AI House presence.
+
+Operational Scope: Serves as the community leadership pipeline across engineering institutions and regional builder clusters.
+
+4. Audience Tracks & Engagement Models
+
+A. Developers & Builders
+
+Route: https://app.hidevs.xyz/
+
+Core Focus: "Execution > Education" and "Proof of work > Certificates".
+
+Deliverables: Guided project sprints, continuous automated feedback, participation in the $10,000 challenge, free Gemini LLM API credits, and direct job/internship referrals to partner tech companies.
+
+B. AI Tool Companies
+
+Route / Contact: mailto:deepak@aihouze.xyz
+
+Core Focus: Developer-relations campaigns putting developer products into the hands of 30,000+ active builders.
+
+Deliverables: Branded product launch events, developer hackathons, automated agent evaluation, and performance-based benchmark leaderboards.
+
+C. Tech Communities
+
+Route / Contact: mailto:rakesh@hidevs.xyz
+
+Core Focus: Event home partnership for non-profit and regional developer clubs.
+
+Deliverables: Full access to the 200+ seat Bengaluru venue at zero venue rental cost, allocation of Gemini API credits, automated submission scoring, swag kits, trophies, and judge panels.
+
+D. Colleges & Academic Institutions
+
+Route / Contact: mailto:deepak@aihouze.xyz
+
+Core Focus: Institutional skill-building pipelines and engineering faculty initiatives.
+
+Deliverables: 20+ formal institutional MoUs, expert-led campus bootcamps, 3-day intensive GenAI workshops, the Campus FDE (Forward Deployed Engineer) Launchpad, and academia dinners for professors.
+
+E. Founders & Venture Capital
+
+Route / Contact: mailto:deepak@aihouze.xyz
+
+Core Focus: Pre-seed/Seed talent discovery and venture incubation.
+
+Deliverables: Direct access to hiring funnels built from competition leaderboards, physical co-working residency for early-stage AI startups, 1:1 builder mentorship, and curated Demo Days with active AI VC funds.
+
+5. Partner Hackathons & Case Studies
+
+Case Study 1: AI Agent Builder Series 2026 (with Google for Developers)
+
+Architecture: Multi-round hackathon focused on shipping enterprise-ready agents solving real-world challenges.
+
+Quantitative Metrics: 7,500+ registrations, 598 submitted agents, 546 agents built using Google's tech stack (91% stack adoption), 100+ cities, 200+ colleges, 355 volunteers, 120+ finale attendees, 1,500+ LinkedIn posts, and 750,000+ social impressions.
+
+Case Study 2: YC Fall 2026 × Moss: The Zero Latency Builder Sprint
+
+Primary URL: https://www.aihouze.xyz/moss-hackathon
+
+Architecture: Sprint focused on developing low-latency agent architectures aligned with 4 YC Request for Startups (RFS) tracks.
+
+Quantitative Metrics: ₹50,000+ cash pool, 1,510+ registrations, 150+ Round 1 submissions, 50+ offline finale participants across 30+ cities, 100+ GitHub repository stars, 135 LinkedIn posts, 40 X posts, and 220,000+ impressions.
+
+Case Study 3: HiDevs × Mastra AI Agent Hackathon
+
+Key Partners: Mastra, Qdrant Vector Database, Enkrypt AI.
+
+Architecture: End-to-end hackathon targeting production deployments built on the Mastra agent framework.
+
+Quantitative Metrics: 1,435+ registrations, 166 Round 1 submissions, 150+ builders qualified for the finale, 60+ offline participants across 30+ cities, 41 GitHub stars, 75+ LinkedIn posts, and 100,000+ impressions.
+
+6. Event Registry & Luma Integration
+
+Master Events Hub: https://luma.com/ai_house
+
+Catalogued Sub-events & Registration URLs:
+
+AI House BLR: The $10K Builder Launch: https://luma.com/ai-omn9
+
+The AI Agent Era in Academia (Professor Dinner): https://luma.com/ai-rjbs
+
+Campus FDE Launchpad: Deploy AI Agents: https://luma.com/CampusFDELaunchpad
+
+Kaggle meets LeetCode Rewards Challenge: https://luma.com/KagglemeetsLeetCode
+
+FAANG is Out, MANGOS is In (Interview Strategy): https://luma.com/ai-92l0
+
+AI Internship Hackathon: https://luma.com/ai-84kw
+
+No Python. No Excuses. Build AI Agents with Mastra: https://luma.com/ai-5pw4
+
+Sports World Cup Hackathon (San Francisco Hub): https://luma.com/ai-pq8b
+
+7. Ecosystem Partners, Tech Stack & Member Employers
+
+AI & Dev-Tools Tech Stack: Google Gemini, Groq, Hugging Face, LangChain, LlamaIndex, Streamlit, TruLens, Mastra.
+
+Strategic Enterprise Partners: Google for Developers, Google Cloud, Qdrant, Enkrypt AI, Lyzr, Moss, Perplexity AI, Omi, Y Combinator (YC Fall 2026 track association).
+
+Affiliated Community Partners: DevXpanse, FAIR, TCU, Inferno, Tech4U (part of 70+ ecosystem partners).
+
+Alumni & Member Workplaces: NVIDIA, Google, Amazon, Red Hat, Walmart, JPMorgan Chase, Okta, Dell, HP, PwC, EY, Accenture, Tata Digital, Jio, Upstox, Quantiphi, Locus Technologies, Motorola, Koskii, UrbanPro, Volt.
+
+8. Leadership & Advisory Profiles
+
+Deepak Chawla (Founder & CEO)
+
+Contact: deepak@aihouze.xyz
+
+Profile: 10 years experience in Data Science; Ex-CTO; scaled 5+ products; led 200+ GenAI POCs; delivered 50+ workshops; conducted 25+ hours of 1:1 sessions across 5,000+ mentored students; two-time GenAI Mentor of the Year (featured on Times Square billboard).
+
+Rakesh Kumar (Co-Founder & CMO)
+
+Contact: rakesh@hidevs.xyz
+
+Profile: 10+ years experience; 10,000+ hours in content marketing and digital strategy; scaled 20+ SMEs past ₹10 lakh in revenue; heads brand operations, college MoUs, and community co-hosting tracks.
+
+9. Historical Timeline & Key Milestones
+
+23 Aug 2024: HiDevs next chapter begins; founding team travels to San Francisco, sparking the concept for a physical AI builder space.
+
+Sep 2024: Launch of HiDevs GenAI workforce platform, combining practical learning with hiring pipelines.
+
+07 Oct 2024: First GenAI cohort commences.
+
+20 Nov 2024: Strategic technology partnership signed with Google Cloud.
+
+25 Dec 2024: Christmas Day platform product release.
+
+Jan – Mar 2025: Early growth traction; Perplexity AI fellowship milestone launched (20 March 2025).
+
+15 Apr 2025: Learning community crosses 2,000+ active learners.
+
+May – Jun 2025: Rollout of B2B programs; global launch on Product Hunt (14 June 2025); San Francisco venture pitch roadshow (June–July 2025).
+
+Jul – Sep 2025: First large-scale platform Skillathon hosted; one-year milestone achieved.
+
+May 2026: Ecosystem partnerships expanded with Lyzr, Qdrant, and Omi.
+
+Aug 2026: Conclusion of the AI Agent Builder Series with Google across 100+ cities.
+
+Mid 2026 Track Record: Platform scales to 18,000 users, 30,000+ total community network, 1,339+ verified community-built AI agents, 100+ events, and 50+ hackathons/build sprints.
+
+16 Nov 2026: Flagship Agent Builder Challenge launch date ($10,000 prize pool).
+
+10. Frequently Asked Questions (FAQ Knowledge Base)
+
+What is AI House?
+
+AI House is an execution-focused community house for AI builders, founders, and engineers—not a co-working space. Powered by HiDevs, it provides physical and digital infrastructure to learn, build, and ship production AI agents.
+
+Is AI House free to join or visit?
+
+Yes, access to the community, general open house sessions, and participation in hackathons is completely free.
+
+Where is AI House located and what are the timings?
+
+Located at 2nd Floor, Above Titan World, HSR Layout, Bengaluru, Karnataka, India. Operating hours are 10:00 AM to 8:00 PM IST, Monday through Sunday.
+
+Can external tech clubs host hackathons or meetups at AI House?
+
+Yes. Approved tech communities can use the 200+ seat venue at zero venue cost, complete with Gemini API credits, trophy kits, judge panels, and automated evaluation systems by contacting rakesh@hidevs.xyz.
+
+How can builders qualify for hiring referrals or investment?
+
+Builders who demonstrate consistent proof of work through guided project sprints, hackathons, and high ranks on the competition leaderboards receive direct referrals to partner companies and invites to investor demo days.
+
+================================================================================
+SOURCE 2 — ORIGINAL HIDEVS PLATFORM INVENTORY
+================================================================================
+
+HiDevs Platform — Master Product Data & Feature Inventory
+
+Comprehensive technical specifications, primary routes, and architectural feature breakdown for the HiDevs Ecosystem.
+
+1. Platform Master Inventory
+
+Feature Name | Category | Primary URL | Description | Key Modules / Sub-components
+GenAI Internship | Curriculum & Training | https://app.hidevs.xyz/genai-internship | Structured, multi-level GenAI internship program featuring daily coursework, assessments, and checkpoints. | Daily Lessons, Knowledge Quizzes, CodeQuest Labs, LeetPrompt Challenges, Milestone Verification
+CodeQuest | Developer Practice | https://app.hidevs.xyz/code-quest | Hands-on coding environment supporting Python, Data Structures & Algorithms, and AI application engineering. | In-browser Code Editor, Automated Test Runner, Practice Problem Directory, Local Leaderboard
+LeetPrompt | Prompt Engineering | https://app.hidevs.xyz/leetprompt | Dedicated prompt-engineering practice platform with quantitative evaluation metrics. | Scenario Problem Sets, Output Scoring Engine, System/User Prompt Benchmarking, Local Leaderboard
+AI Quest | Career Tracks | https://app.hidevs.xyz/ai-quest/tracks | Integrated milestone-based learning paths combining programming tasks with prompt engineering assignments. | Role-based Tracks, Combined CodeQuest & LeetPrompt Milestones, Step Completion Tracking
+Projects & Guided Builds | Practical Builds | https://app.hidevs.xyz/projects | Portfolio project build workspace offering guided sequential builds and collaborative open project repositories. | Guided Projects (/projects/guided/{slug}), Task Submission Portal, Project Upload (/submit-project), NeuroFlow AI Platform
+Dr. Agent | Diagnostic Software | https://app.hidevs.xyz/dr-agent | AI infrastructure intelligence tool providing automated diagnostic scans and audits for production AI agent repositories. | Landing & Beta Request Page, GitHub Repo Diagnostics, Audit Dashboard (/dr-agent/reports), Report IDs (/reports/{id})
+AI House Community | Community & Events | https://luma.com/ai_house | Physical and online builder community hub running meetups, builder sprints, dev-rel hackathons, and founder residences. | Bengaluru Venue (HSR Layout), Event Calendar on Luma, AI Agent Builder Series, College/Partner MoUs
+Dave | AI Assistance | https://app.hidevs.xyz/dave | Platform-native AI mentor and architecture copilot offering interactive technical review and learner guidance. | Conversational Mentor Interface, Architecture Copilot, Skill & Curriculum Advisory
+AI Agents Hub | Discovery Library | https://app.hidevs.xyz/agents-library | Showcase and discovery catalog for community-developed, open, and partner AI agents. | Agent Showcase Cards, Categorical Filter, Tag/Title Search, External Demos & Repositories
+Platform Leaderboard | User Rankings | https://app.hidevs.xyz/leaderboard | Unified builder leaderboard ranking platform developers based on validated project output and scores. | Top 3 Podium, Rank/Score Sorting, Search by Builder, Evaluated Portfolio Metrics
+Catalog | Unified Directory | https://app.hidevs.xyz/catalog | Consolidated discovery directory allowing users to search and filter courses, builds, and challenges across the platform. | Global Filter System, Course Directory, Project Directory, Challenge Finder
+AI Academy — Courses | Learning Academy | https://app.hidevs.xyz/ai-academy | Self-paced educational video, reading, and lab courses covering Generative AI and core software systems. | 5-Day GenAI Workshop, Modular AI Architecture, Prompt Foundations, Python for Beginners, Browser Extensions
+AI Academy — Webinars | Live Programs | https://app.hidevs.xyz/ai-academy/webinars | Multi-day live technical series, builder labs, and interactive streamed developer workshops. | 3-Day Live GenAI Series, Evening Builder Labs, Agent Builder Streams
+AI Academy — Blogs | Technical Content | https://app.hidevs.xyz/ai-academy/blogs | Engineering documentation, architecture tutorials, technical deep dives, and product release articles. | Tutorials, LLM Fine-Tuning Overviews, RAG System Breakdowns, Framework Explanations
+Partner Academies | Partner Programs | https://app.hidevs.xyz/ai-academy/academies | Specialized educational portals run in direct partnership with enterprise tools and external technologies. | Enkrypt AI Security Academy, Enterprise AI Governance Curriculums
+Hackathons / Competitions | Historical Events | https://app.hidevs.xyz/competitions?tab=hackathons | Historical archive of completed platform competitions, challenges, and collaborative hackathons. | Past Event Details, CodeQuest 2026 Archive, Skillathon Results, Retrospective Leaderboards
+Platform Navigation | Dashboard Routing | https://app.hidevs.xyz/dashboard | Main dashboard navigation structure detailing user menu hierarchy and page routes. | Sidebar Layout, Dashboard Widgets, Quick-Action Links
+
+2. Granular Feature Specifications
+
+1. Projects & Guided Builds
+
+Primary Section URL: https://app.hidevs.xyz/projects
+
+Sub-pages & Routes:
+
+Guided Project Interface: https://app.hidevs.xyz/projects/guided/{slug}
+
+Guided Task Execution: https://app.hidevs.xyz/projects/guided/{slug}/tasks
+
+Open Project Detail: https://app.hidevs.xyz/projects/{id}
+
+Project Submission: https://app.hidevs.xyz/projects/submit-project
+
+Data Attributes & Functional Details:
+
+Guided Task Model: Builds are organized into sequential milestone tasks. Each individual task requires the submission of a public GitHub URL verifying specific branches or directories.
+
+Final Task Rule: The concluding task in any guided build mandates the submission of the primary root repository URL.
+
+State Machine: Once submitted, tasks enter an evaluation phase during which submissions are locked against modification. If a submission fails review, the user is permitted to resubmit corrections.
+
+Featured Project Build: NeuroFlow AI Platform (https://app.hidevs.xyz/projects/guided/neuroflow-ai-platform).
+
+Open Project Track: Allows builders to publish external independent builds, access public leaderboards, or collaborate on team projects.
+
+2. Dr. Agent (Infrastructure Intelligence)
+
+Primary Section URL: https://app.hidevs.xyz/dr-agent
+
+Sub-pages & Routes:
+
+Scans & Diagnostic Reports Overview: https://app.hidevs.xyz/dr-agent/reports
+
+Granular Scan Report: https://app.hidevs.xyz/dr-agent/reports/{id}
+
+Data Attributes & Functional Details:
+
+Product Scope: Diagnostic intelligence suite targeting production-level agent stacks. Audits infrastructure, evaluates agent consistency, and highlights integration failure points.
+
+Execution Workflow: Accepts public GitHub repository links. Users connect a repository, run an automated scan pipeline, and review the resulting analysis.
+
+Access Tier: Select advanced scan workflows require applying for Beta Access directly on the landing page.
+
+Error Handling & Edge Cases: Private repositories, invalid repository URLs, or broken repository connections can trigger an explicit "unavailable" status. The repository must be publicly accessible for the scan workflow.
+
+3. AI House (Community, Physical Space & Ecosystem Events)
+
+Primary Locations & URLs:
+
+Event Listing & Tickets: https://luma.com/ai_house
+
+Community Hub: https://www.aihouze.xyz
+
+Competitions & Series: https://app.hidevs.xyz/ai-house-agent-builder
+
+Physical Headquarters:
+
+Address: 2nd Floor, Above Titan World, HSR Layout, Bengaluru, Karnataka, India.
+
+Facility Details: Dedicated 200+ seat physical builder venue; operating hours 10:00 AM – 8:00 PM daily.
+
+Key Programs & Community Data:
+
+Community Scale: 30,000+ member builder network; 100+ events and hackathons hosted; 1,300+ AI agents built across initiatives.
+
+AI Agent Builder Series: Cohort build program held in partnership with HiDevs, culminating in developer voting, public agent leaderboards, and offline grand finales.
+
+University & Industry Outreach: 20+ MoUs with engineering colleges, 70+ ecosystem community partners, and corporate developer-relation tracks (including partnerships with Lyzr, Qdrant, and Google Cloud).
+
+Founder Support: Physical co-working residency for early-stage AI startups, investor demo days with active funds, and 1:1 builder mentorship pipelines.
+
+4. GenAI Internship
+
+Primary Section URL: https://app.hidevs.xyz/genai-internship
+
+Data Attributes & Functional Details:
+
+Architecture: Tiered, multi-level progressive structure divided into daily operational goals (e.g., Level Day tracks).
+
+Daily Unit Structure:
+
+Concept reading and instructional modules.
+
+Post-lesson multiple-choice and conceptual quizzes.
+
+Practical code testing via embedded CodeQuest problems.
+
+Prompt optimization problems via LeetPrompt.
+
+Checkpoint completion requirements where users mark units complete upon satisfying milestone criteria.
+
+5. CodeQuest
+
+Primary Section URL: https://app.hidevs.xyz/code-quest
+
+Data Attributes & Functional Details:
+
+Core Focus: Implementation problems spanning Python fundamentals, algorithmic Data Structures & Algorithms, and AI/ML model orchestration scripts.
+
+Interface Specs: Full in-browser code editor, automated test runner against hidden and public test cases, and pass/fail execution output.
+
+Rankings: Features its own practice-specific leaderboard evaluating individual problem solve rates and submission velocity.
+
+6. LeetPrompt
+
+Primary Section URL: https://app.hidevs.xyz/leetprompt
+
+Data Attributes & Functional Details:
+
+Core Focus: Hands-on prompt engineering problems testing context window discipline, format adherence, instruction injection defense, and output consistency.
+
+Scoring: Automated quantitative evaluation framework scoring responses against model-graded and heuristic validation criteria.
+
+Rankings: Maintains a domain-specific scoring leaderboard independent of general platform standings.
+
+7. AI Quest (Career Tracks)
+
+Primary Section URL: https://app.hidevs.xyz/ai-quest/tracks
+
+Data Attributes & Functional Details:
+
+Curriculum Model: End-to-end learning pathways mapped to specific engineering profiles (e.g., AI Engineer, Prompt Engineer, Agent Architect).
+
+Progression Logic: Interleaves alternating milestones from CodeQuest (software challenges) and LeetPrompt (prompting challenges) to validate holistic skill development.
+
+8. AI Academy
+
+Primary Section URL: https://app.hidevs.xyz/ai-academy
+
+Sub-pages & Routes:
+
+Course Directory: https://app.hidevs.xyz/ai-academy
+
+Live Webinars: https://app.hidevs.xyz/ai-academy/webinars
+
+Technical Blogs: https://app.hidevs.xyz/ai-academy/blogs
+
+Partner Academies: https://app.hidevs.xyz/ai-academy/academies
+
+Curriculum Data & Course Offerings:
+
+5 Days Gen AI Workshop: Foundations of LLMs, architectural mechanics, fine-tuning, RAG systems, and prompt engineering (21 lessons).
+
+Build Your Own Gen AI Solution: End-to-end development covering ingestion pipelines, chunking methodologies, and data preprocessing (15 lessons).
+
+7 Days of Gen AI Builders: Practical implementation of AI agents, vector databases, full-stack deployment, and production chatbots (34 lessons).
+
+Generative AI Project Structure: Modular architectural design patterns, error handling, configuration management, and rate limiting (28 lessons).
+
+Foundations of Prompt Engineering and LLMs: Zero-shot, few-shot, and chain-of-thought methodologies applied to production domains (22 lessons).
+
+Ship Your Agent: From Notebook to Production: Best practices for converting prototype notebooks into resilient, user-facing agent services.
+
+Specialized Tracks: Enkrypt AI Security Academy focusing on LLM red-teaming, guardrails, and compliance.
+
+9. Platform Builders Leaderboard
+
+Primary Section URL: https://app.hidevs.xyz/leaderboard
+
+Data Attributes & Functional Details:
+
+Scope: Platform-wide recognition framework tracking verified builder credentials across completed projects.
+
+UI Layout: Top 3 builder showcase podium accompanied by a complete sorted table.
+
+Sort & Query Parameters: Filterable and sortable by overall builder points, submission volume, and relative ranking.
+
+System Boundary: Does not include isolated problem counts from LeetPrompt or CodeQuest, which are housed inside their respective sub-products.
+
+10. AI Agents Hub (Agents Library)
+
+Primary Section URL: https://app.hidevs.xyz/agents-library
+
+Data Attributes & Functional Details:
+
+Function: Public catalog and discovery repository for AI agents built across the community and during hackathons.
+
+Attributes per Entry: Title, creator profile, functional description, framework/stack tags, and live deployment links.
+
+Filtering: Searchable by technical stack, business vertical, and capability category.
+
+11. Dave (AI Mentor & Copilot)
+
+Primary Section URL: https://app.hidevs.xyz/dave
+
+Data Attributes & Functional Details:
+
+Function: On-platform conversational assistant.
+
+Capabilities: Provides architectural guidance on guided projects, answers syllabus questions regarding the GenAI Internship, suggests debugging approaches for CodeQuest problems, and assists with framework choices.
+
+12. Catalog & Discovery
+
+Primary Section URL: https://app.hidevs.xyz/catalog
+
+Data Attributes & Functional Details:
+
+Function: The primary aggregated index for the entire HiDevs learning and project ecosystem.
+
+Content Mapped: Consolidates courses, workshops, guided portfolio projects, and challenge tracks into a single searchable filter matrix.
+
+13. Hackathons & Competitions Archive
+
+Primary Section URL: https://app.hidevs.xyz/competitions?tab=hackathons
+
+Data Attributes & Functional Details:
+
+Operational State: Read-only archival status. Historical entries (such as CodeQuest 2026 and platform Skillathons) remain available for portfolio verification and reference, but are closed to new team registrations.
+
+14. Navigation & Dashboard Hierarchy
+
+Base Dashboard URL: https://app.hidevs.xyz/dashboard
+
+Navigation Map:
+
+Top Level: Dashboard (/dashboard), Catalog (/catalog), Leaderboard (/leaderboard).
+
+Practice & Learn: GenAI Internship (/genai-internship), CodeQuest (/code-quest), LeetPrompt (/leetprompt), AI Quest (/ai-quest/tracks), AI Academy (/ai-academy).
+
+Build & Diagnose: Projects (/projects), Submit Project (/projects/submit-project), Dr. Agent (/dr-agent), Agents Library (/agents-library), Dave AI (/dave).
+
+Community & Events: Hackathons Archive (/competitions?tab=hackathons), AI House / Luma (https://luma.com/ai_house).
+
+================================================================================
+SOURCE 3 — HIDEVS PLATFORM PAGE-SPECIFIC PRODUCT INFORMATION
+================================================================================
+
+15. HiDevs Platform Pages — Additional Product Information
+
+This section supplements the existing landing-page knowledge above with concise information from the supplied HiDevs platform page data. It does not replace or rewrite the existing sections. AI House information in the existing knowledge base is intentionally left unchanged.
+
+15.1 GenAI Internship
+
+The GenAI Internship is a multi-level learning program. Each level is structured around approximately 10 days. Daily learning can include reading material, quizzes or assessments, industry tips, CodeQuest coding challenges, and LeetPrompt prompt-engineering challenges. Some days are project-focused. Ask Dave is available on reading pages.
+
+The supplied platform data describes five levels:
+- Level 1 — GenAI Foundations: Generative AI fundamentals, prompt engineering, and Python basics.
+- Level 2 — AI Systems & Engineering: Building structured AI applications with Python.
+- Level 3 — Advanced Python & Production AI Systems: A production-ready AI recommendation-engine build.
+- Level 4 — NeuroFlow Production AI Platform: A multimodal LLM orchestration platform covering RAG, evaluation, fine-tuning, and deployment.
+- Level 5 — GenAI Systems Deep Dive: RAG, MCP, agent governance, evaluation strategy, system architecture, and PRD work.
+
+A day may require completion of its linked CodeQuest and/or LeetPrompt challenge before Mark Complete becomes available. Some days also have project or GitHub requirements. The supplied platform guidance identifies a score of at least 50% as a possible challenge-completion threshold; the threshold may vary by day.
+
+Main page: https://app.hidevs.xyz/genai-internship
+
+15.2 CodeQuest
+
+CodeQuest is a coding-practice environment with an in-browser editor, tests, and submissions. The supplied pages identify three practice areas:
+- Python Programming — Python fundamentals through advanced topics; approximately 91 problems.
+- Data Structures & Algorithms — arrays, trees, graphs, dynamic programming, and related topics; approximately 147 problems.
+- Artificial Intelligence / GenAI Systems — exercises involving GenAI systems, RAG, and agents; approximately 10 problems.
+
+Problem links follow these patterns:
+- Python: https://app.hidevs.xyz/code-quest/python/problem/{problemId}
+- DSA: https://app.hidevs.xyz/code-quest/dsa/problem/{problemId}
+- AI: https://app.hidevs.xyz/code-quest/AI/problem/{problemId}
+
+Main page: https://app.hidevs.xyz/code-quest
+
+15.3 LeetPrompt
+
+LeetPrompt is a prompt-engineering practice area. Users write and submit prompts, which are evaluated against scoring rubrics. The supplied categories include Chain of Thought, Code Debugging, Code Generation, Conversation AI Bot, Few-Shot Techniques, LinkedIn Post Generation, One-Shot Techniques, Zero-Shot Technique, RAG / Retrieval, Structured Output, and Agent Prompting.
+
+Problem URLs follow this pattern: https://app.hidevs.xyz/leetprompt/problems/{fileId}/{questionId}
+Category pages follow this pattern: https://app.hidevs.xyz/leetprompt/problems/{fileId}
+
+Main page: https://app.hidevs.xyz/leetprompt
+
+15.4 AI Quest
+
+AI Quest provides career-oriented learning tracks that combine CodeQuest coding tasks with LeetPrompt prompt-engineering challenges. The tracks are intended to connect programming practice and prompt-engineering practice as learners progress through milestones.
+
+Tracks page: https://app.hidevs.xyz/ai-quest/tracks
+
+15.5 Projects and Guided Builds
+
+HiDevs Projects supports portfolio-oriented project work through two paths:
+- Guided projects: structured, step-by-step builds with tasks and progress tracking. Task submissions typically use GitHub links; specific branch or path requirements may apply. A final task may require the base repository URL.
+- Open or collaborative projects: project pages provide project information, submission/status details, and a project leaderboard where available.
+
+Guided project routes follow /projects/guided/{slug}; task pages follow /projects/guided/{slug}/tasks. Users can submit a project through https://app.hidevs.xyz/projects/submit-project. Submissions may be locked while under evaluation; a rejected project may allow resubmission. The supplied data names NeuroFlow AI Platform as an example guided project.
+
+Projects home: https://app.hidevs.xyz/projects
+Project submission: https://app.hidevs.xyz/projects/submit-project
+
+15.6 Dr. Agent
+
+Dr. Agent is HiDevs' AI infrastructure intelligence product. It helps teams analyze, validate, optimize, and scale production AI agents through repository scans and diagnostic reports.
+
+Typical flow described in the supplied page data:
+1. Open Dr. Agent and connect or provide a public GitHub repository.
+2. Run a scan or analysis.
+3. Review the generated report.
+
+Some Dr. Agent workflows require a beta-access application. Reports are available at https://app.hidevs.xyz/dr-agent/reports, and an individual report can be opened at /dr-agent/reports/{id}. When a repository cannot be analyzed, the interface may display an unavailable status or reason. Public repository accessibility is required for the scan workflow.
+
+Landing page: https://app.hidevs.xyz/dr-agent
+Reports: https://app.hidevs.xyz/dr-agent/reports
+
+15.7 Dave — AI Mentor
+
+Dave is the on-platform AI mentor hub, offering general chat, skill-focused experiences, and tools. The supplied pages identify these skills or tools:
+- Architecture Copilot — guidance for system architecture, diagrams, and PRDs.
+- DSA Problem Solver.
+- Hackathon Mentor.
+- Jailbreak Challenge.
+- GenAI Skills Coach.
+- Custom Skills.
+- DevNetwork.
+
+Dave is the platform's learning and technical guidance assistant. It is distinct from Dr. Agent, which is used for AI infrastructure diagnostics, and the AI Agents Hub, which is a library for discovering agents.
+
+Dave: https://app.hidevs.xyz/dave
+Architecture Copilot: https://app.hidevs.xyz/dave/architecture
+
+15.8 AI Agents Hub
+
+The AI Agents Hub is a community showcase and discovery library for AI agents. Users can browse agent cards, search by title, description, or tags, and filter by category. It is intended for discovering community agent examples and ideas; it is not the same as Dave's mentor chat or Dr. Agent's infrastructure diagnostics.
+
+AI Agents Hub: https://app.hidevs.xyz/agents-library
+
+15.9 Platform Leaderboard
+
+The platform Leaderboard ranks builders based on project work across HiDevs. It includes ranked profiles, scores, search and sorting by rank or score, and a top-three podium. It is a builder-recognition and discovery page, not a course.
+
+CodeQuest and LeetPrompt also have their own practice-specific leaderboards. Those are separate from the main platform leaderboard.
+
+Leaderboard: https://app.hidevs.xyz/leaderboard
+
+15.10 AI Academy
+
+AI Academy groups learning resources into courses, webinars, technical blogs, and partner academies.
+
+The supplied course pages include:
+- 5 Days Gen AI Workshop — LLM fundamentals, architecture, training and fine-tuning concepts, prompt engineering, and RAG.
+- Build Your Own Gen AI Solution — data collection, preprocessing, data quality, splitting, and chunking.
+- 7 Days of Gen AI Builders — chatbots, RAG, vector databases, AI agents, and full-stack AI development.
+- Generative AI Project Structure: A Modular Approach — modular architecture, configuration, error handling, rate limiting, and scalable application structure.
+- Foundations of Prompt Engineering and LLMs — zero-shot, few-shot, and chain-of-thought prompting.
+- Python for Beginners — Python syntax, control flow, functions, error handling, and data structures.
+- Create Your Own AI-Powered Browser Extension — browser-extension architecture and AI integration.
+- Exploring Open Source AI Models with Hugging Face — model selection, inference, fine-tuning, and deployment across AI modalities.
+
+The webinar collection includes a 3-Day Live Gen AI Series covering GenAI foundations, workflows using RAG and agents, and AI solution deployment, as well as the AI Agent Builder Series 2026. Dates in the supplied webinar records are source-record dates and may refer to past sessions.
+
+The supplied partner-academy record describes Enkrypt AI Academy, focused on AI security and trust, including red teaming, guardrails, and secure AI applications.
+
+AI Academy: https://app.hidevs.xyz/ai-academy
+Webinars: https://app.hidevs.xyz/ai-academy/webinars
+Blogs: https://app.hidevs.xyz/ai-academy/blogs
+Partner academies: https://app.hidevs.xyz/ai-academy/academies
+
+15.11 Catalog
+
+Catalog is the platform's central directory for learning and project resources. It brings together courses, workshops, guided projects, and challenge tracks in one searchable directory. Individual product pages provide details about specific offerings.
+
+Catalog: https://app.hidevs.xyz/catalog
+
+15.12 Hackathons and Competitions Archive
+
+The HiDevs competitions archive is a historical archive. The listed events Memory Over Models, CodeQuest 2026, and HiDevs Skillathon are marked as closed and are not open for registration.
+
+Other learning and practice offerings in the platform include GenAI Internship, CodeQuest, LeetPrompt, and AI Quest tracks.
+
+Archive: https://app.hidevs.xyz/competitions?tab=hackathons
+
+15.13 Platform Navigation
+
+The supplied navigation map identifies these main dashboard destinations:
+- Dashboard: https://app.hidevs.xyz/dashboard
+- Catalog: https://app.hidevs.xyz/catalog
+- GenAI Internship: https://app.hidevs.xyz/genai-internship
+- CodeQuest: https://app.hidevs.xyz/code-quest
+- LeetPrompt: https://app.hidevs.xyz/leetprompt
+- AI Quest: https://app.hidevs.xyz/ai-quest/tracks
+- AI Academy: https://app.hidevs.xyz/ai-academy
+- Projects: https://app.hidevs.xyz/projects
+- Dr. Agent: https://app.hidevs.xyz/dr-agent/reports
+- Dave: https://app.hidevs.xyz/dave
+- AI Agents Hub: https://app.hidevs.xyz/agents-library
+- Leaderboard: https://app.hidevs.xyz/leaderboard
+- Competitions archive: https://app.hidevs.xyz/competitions
+
+The Cohort dashboard is access-gated: https://app.hidevs.xyz/cohort-dashboard.
+
+===============================================================================
+SOURCE 4 — CLIENT COMPETITION HOSTING
+
+HiDevs Competition Hosting for Organisations
+
+1. Overview
+
+HiDevs provides an AI-powered competition platform through which organisations can engage developers to build AI agents using the organisation's product. The competition model focuses on practical product usage and the creation of working AI-agent projects.
+
+The landing page describes the following potential outcomes:
+- AI agents built by developers using the organisation's product.
+- Demonstrations of submitted agents, including live links.
+- Integrations created using the organisation's product.
+- Information about how participating developers use the product.
+- Feedback about the product and its documentation.
+- Insights that may inform product improvements and roadmap decisions.
+- Reports about competition participation and submitted work.
+
+2. Hosting Enquiry and Booking
+
+The HiDevs landing page includes a "Host a competition" button. This button links to the team's booking page:
+
+https://cal.com/deepak-hidevs
+
+The booking page is presented as a 15-minute call with the HiDevs team. The call is intended to review the organisation's product and discuss a suitable competition format.
+
+The Host a competition booking link is:
+https://cal.com/deepak-hidevs
+
+3. Competition Formats
+
+The landing page identifies three competition formats:
+- Challenge
+- AI Quest
+- Hackathon
+
+The suitable format is discussed with the organisation based on its product and goals.
+
+4. Competition Workflow
+
+Challenge preparation:
+The organisation shares a product documentation link and selects a competition format. The Create agent uses the documentation to prepare challenge steps, tests, and hints.
+
+Participant identification:
+The organisation can define its intended developer audience by developer type, technology stack, skill level, and region. The Match agent is described as finding and inviting developers who fit the selected audience.
+
+Competition monitoring:
+The Rank agent tracks submissions and updates the competition leaderboard.
+
+Developer assistance:
+Participants build AI agents using the organisation's product. The Assist agent provides hints and relevant product-documentation references during development.
+
+Submission evaluation:
+The Score agent runs tests and evaluates submissions. The landing page identifies code quality and originality as evaluation considerations and describes score explanations as part of the evaluation output.
+
+Competition reporting:
+The Report agent prepares a report describing participation, submitted work, and areas that may need improvement.
+
+Documentation access:
+The landing page describes an option to embed the challenge in the organisation's product documentation page. The Create agent is associated with keeping the challenge available through that documentation experience.
+
+5. Competition Agents
+
+The landing page describes six specialised agents:
+- Create agent: Uses product documentation to prepare challenge steps, tests, and hints.
+- Match agent: Finds and invites developers who fit the selected audience.
+- Assist agent: Provides hints and relevant documentation references while participants build.
+- Score agent: Evaluates submissions using tests and criteria such as code quality and originality, and explains scores.
+- Rank agent: Tracks submissions and maintains the competition leaderboard.
+- Report agent: Produces reports covering participation, submitted agents, and potential product or documentation improvements.
+
+6. Developer Community and Participant Audience
+
+The landing page describes access to the AI House online developer community, which is connected to more than 100 partner communities.
+
+The intended participant audience includes developers across different locations and skill levels. Audience preferences can include:
+- Developer type.
+- Technology stack.
+- Skill level.
+- Region.
+
+7. Competition Outputs and Insights
+
+The landing page describes the following possible outputs:
+- Participant information.
+- Agent demonstrations and live links.
+- Integrations built using the organisation's product.
+- Insights into developer product usage.
+- Product and documentation feedback.
+- Product-improvement and roadmap insights.
+- Retention information at 7-day, 30-day, and 90-day intervals.
+- Exportable competition reports.
+
+These are described as platform capabilities and potential outputs; specific competition results depend on the competition and its participants.
+
+8. Pricing Model
+
+The landing page describes the pricing approach as "pay per agent built". It also states that a plan is tailored according to the organisation's launch, goal, duration, and participating audience.
+
+The supplied landing page does not state:
+- Exact prices or a price list.
+- A minimum budget.
+- A minimum number of agents.
+- Fixed packages or plan tiers.
+- Detailed payment or contract terms.
+
+Pricing enquiries can be discussed with the HiDevs team through the Host a competition booking page:
+https://cal.com/deepak-hidevs
+
+9. Illustrative Website Metrics
+
+The landing page displays example dashboard metrics, including 312 joined, 64 agents, and 41% day-30 retention. These figures are labelled as illustrative demo data and are examples shown in the website interface, not verified competition results.
+
+10. Additional Commercial and Operational Details
+
+The supplied landing page does not specify:
+- Minimum or maximum competition duration.
+- Guaranteed participant or submission counts.
+- Guaranteed number of agents or integrations.
+- Prize pool amounts or prize distribution for a client-hosted competition.
+- Detailed participant eligibility requirements.
+- Contract, billing, refund, or payment terms.
+- Technical requirements for embedding a challenge in a product documentation site.
+- Whether every competition format includes every workflow feature.
+- Whether an organisation can independently create and launch a competition without a discussion with the HiDevs team.
+
+Primary hosting and enquiry link:
+https://cal.com/deepak-hidevs
