@@ -1,53 +1,70 @@
 
+import json
 import logging
+import re
 
+from langchain_core.messages import HumanMessage, SystemMessage
+
+from models.chat import ChatService
+from prompts.router_prompt import ROUTER_PROMPT
 from retrieval.pipeline import RAGPipeline
 
 
 logger = logging.getLogger(__name__)
 
+VALID_INTENTS = {"knowledge_query", "small_talk", "unclear", "off_topic"}
+
 
 class HiDevsSupportAgent:
-    """Orchestrate user interactions with the HiDevs support system."""
+    """Orchestrate user interactions with the HiDevs support system.
+
+    Every message is first routed by the model. Only messages that need
+    HiDevs information go to the knowledge base. Social messages get a
+    short direct reply, and unclear messages get a clarifying question.
+    """
 
     def __init__(self):
         self.rag_pipeline = RAGPipeline()
+        self.chat_service = ChatService()
 
-    def _handle_greeting(self) -> dict:
-        """Return a consistent greeting without invoking retrieval."""
+    def _route(self, message: str) -> dict:
+        """Ask the model how the message should be handled."""
 
-        return {
-            "answer": (
-                "Hello! Welcome to HiDevs Support. "
-                "I'm here to help you with HiDevs features, programs, "
-                "projects, and platform-related questions. "
-                "How can I help you today?"
-            ),
-            "sources": [],
-            "intent": "greeting",
-        }
+        messages = [
+            SystemMessage(content=ROUTER_PROMPT),
+            HumanMessage(content=message),
+        ]
 
-    def _classify_message(self, message: str) -> str:
-        """Identify simple greetings without classifying other questions."""
+        raw = self.chat_service.generate_response(messages)
 
-        normalized_message = message.lower().strip()
+        return self._parse_route(raw)
 
-        greetings = {
-            "hi",
-            "hello",
-            "hey",
-            "hii",
-            "hiii",
-            "good morning",
-            "good afternoon",
-            "good evening",
-            "good night",
-        }
+    def _parse_route(self, raw: str) -> dict:
+        """Parse the router's JSON. Fall back to knowledge_query if invalid."""
 
-        if normalized_message in greetings:
-            return "greeting"
+        fallback = {"intent": "knowledge_query", "reply": ""}
 
-        return "knowledge_query"
+        match = re.search(r"\{.*\}", raw, re.DOTALL)
+
+        if not match:
+            logger.warning("Router returned no JSON: %r", raw)
+            return fallback
+
+        try:
+            data = json.loads(match.group(0))
+        except json.JSONDecodeError:
+            logger.warning("Router returned invalid JSON: %r", raw)
+            return fallback
+
+        intent = data.get("intent")
+
+        if intent not in VALID_INTENTS:
+            logger.warning("Router returned unknown intent: %r", intent)
+            return fallback
+
+        reply = str(data.get("reply") or "").strip()
+
+        return {"intent": intent, "reply": reply}
 
     def process_message(self, message: str) -> dict:
         """Process a user message and return a support response."""
@@ -58,19 +75,25 @@ class HiDevsSupportAgent:
         message = message.strip()
 
         try:
-            # 1. Handle greetings directly.
-            intent = self._classify_message(message)
+            route = self._route(message)
+            intent = route["intent"]
 
-            if intent == "greeting":
-                return self._handle_greeting()
+            # Knowledge questions go through retrieval.
+            # If a social or unclear message has no reply, retrieval is the fallback.
+            if intent == "knowledge_query" or not route["reply"]:
+                result = self.rag_pipeline.ask(message)
 
-            # 2. Route other messages through the RAG pipeline.
-            result = self.rag_pipeline.ask(message)
+                return {
+                    "answer": result["answer"],
+                    "sources": result["sources"],
+                    "intent": "knowledge_query",
+                }
 
+            # Social and unclear messages are answered directly, without retrieval.
             return {
-                "answer": result["answer"],
-                "sources": result["sources"],
-                "intent": "knowledge_query",
+                "answer": route["reply"],
+                "sources": [],
+                "intent": intent,
             }
 
         except Exception:
