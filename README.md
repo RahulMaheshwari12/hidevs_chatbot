@@ -14,14 +14,17 @@ data/knowledge_base.txt
         ▼  vector_store/     upsert into Qdrant (local Docker container)
         │
 User question
-        ▼  agent/            greeting check → RAG pipeline for everything else
+        ▼  agent/            model routes each message: knowledge_query, small_talk, or unclear
         ▼  retrieval/        Gemini query embedding → top-k Qdrant search
         ▼  prompts/          system prompt + retrieved context
         ▼  models/           Gemini chat model → grounded answer + sources
 ```
 
-- **Greetings** (hi, hello, good morning, ...) are answered directly without retrieval.
-- **All other messages** go through retrieval. If nothing relevant is found, the agent says the knowledge base does not contain the answer rather than guessing.
+- **Routing is done by the model, not by keyword lists.** Each message gets one of three intents:
+  - `knowledge_query`: a HiDevs question. It goes through retrieval and is answered only from the knowledge base.
+  - `small_talk`: greetings, thanks, or goodbyes. The model replies directly, with no retrieval.
+  - `unclear`: a message that lacks context, such as "what is that". The agent asks what the user means instead of guessing.
+- If retrieval finds nothing relevant, the agent says the knowledge base does not contain the answer rather than guessing.
 - The knowledge base is split by numbered section headings (e.g. `15.1 GenAI Internship`) and by `SOURCE n` blocks, so every chunk keeps its section and source metadata.
 
 ## Project Structure
@@ -56,7 +59,10 @@ HiDevs_RAG_Chatbot/
 ├── tests/                  # Pytest and manual check scripts
 ├── utils/
 ├── docs/
-├── app/                    # FastAPI scaffold (not in use; no API for now)
+├── app/                    # FastAPI service for the website frontend
+│   ├── main.py             # App setup, CORS, agent startup
+│   ├── api/routes.py       # /api/health and /api/chat
+│   └── schemas/chat.py     # Request and response models
 └── logs/
 ```
 
@@ -161,7 +167,59 @@ Re-running is safe. Point IDs are deterministic, so unchanged chunks are updated
 
 If it fails, check that Docker/Qdrant is running and that `GEMINI_API_KEY` and `EMBEDDING_DIMENSION` are set correctly.
 
-## 3. Testing the Agent
+## 3. HTTP API (FastAPI)
+
+The FastAPI service exposes the agent to the website frontend.
+
+Start it from the project root:
+
+```bash
+uvicorn app.main:app --reload --port 8000
+```
+
+Interactive docs are at <http://localhost:8000/docs>.
+
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/api/health` | Returns `{"status": "ok"}` |
+| POST | `/api/chat` | Send one message, get one reply |
+
+Example request:
+
+```bash
+curl -X POST http://localhost:8000/api/chat -H "Content-Type: application/json" -d "{\"message\": \"What is LeetPrompt?\"}"
+```
+
+Example response:
+
+```json
+{
+  "answer": "LeetPrompt is a dedicated prompt-engineering practice platform...",
+  "intent": "knowledge_query",
+  "sources": [
+    {
+      "source_title": "...",
+      "section_number": "...",
+      "section_title": "LeetPrompt",
+      "content": "..."
+    }
+  ]
+}
+```
+
+- `intent` is one of `knowledge_query`, `small_talk`, `unclear`, or `off_topic`. Only `knowledge_query` replies include `sources`.
+- Messages must be 1 to 2000 characters. Empty messages return `422`. Internal errors return a generic `500` message, and the details are logged on the server.
+- The agent is created once at startup. The first start takes a few seconds while it connects to Qdrant.
+- Browsers can call the API only from origins listed in `CORS_ORIGINS` (comma-separated, set in `.env`). The default allows `http://localhost:3000` and `http://localhost:5173`. Add your website's domain there before deploying.
+- The API has no authentication yet. Add it before exposing the API publicly.
+
+Run the API tests (no Gemini or Qdrant calls):
+
+```bash
+python -m pytest tests/test_api.py
+```
+
+## 4. Testing the Agent
 
 Test the agent in this order, from the project root with the environment activated.
 
@@ -190,7 +248,8 @@ Type a question and press Enter. Type `exit` or `quit` to stop. Each reply shows
 
 Try questions like:
 
-- `hi`, which should return the greeting with no retrieval (`Sources retrieved: 0`)
+- `hi` or `how are you`, which should get a direct reply with no retrieval (`Sources retrieved: 0`)
+- `what is that`, which should ask what you mean
 - `What is CodeQuest and how does it work?`
 - `What is LeetPrompt?`
 - `What is the official customer support phone number for HiDevs?` This should be answered as not specified in the knowledge base, not invented.
@@ -204,7 +263,7 @@ agent = HiDevsSupportAgent()
 response = agent.process_message("What is LeetPrompt?")
 
 print(response["answer"])    # Generated answer
-print(response["intent"])    # "greeting" or "knowledge_query"
+print(response["intent"])    # "knowledge_query", "small_talk" or "unclear"
 print(response["sources"])   # Retrieved chunks with content and metadata
 ```
 

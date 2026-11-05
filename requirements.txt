@@ -1,5 +1,7 @@
-﻿# Runtime dependencies for the Streamlit app (used by Streamlit Community Cloud)
+﻿# Runtime dependencies for the Streamlit app and the FastAPI service
 streamlit>=1.36.0
+fastapi>=0.110.0
+uvicorn>=0.28.0
 python-dotenv>=1.0.0
 
 # Gemini
